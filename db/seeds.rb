@@ -13,4 +13,9 @@ Article.create(
   content: 'I called one voice David. But I am really not sure if he is more of a Goliath?!'
 )
 
+Article.create(
+  title: 'The meaning of life',
+  content: '42'
+)
+
 puts 'Seeding Completed!'

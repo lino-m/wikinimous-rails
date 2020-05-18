@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="card">
+    <h1><%= @article.title %></h1>
+    <%= link_to edit_article_path(@article.id) do %>
+      <i class="fa fa-pen"></i>
+    <% end %>
+    <%= link_to article_path(@article.id), method: :delete, data: { confirm: "Delete #{@article.title}?" } do %>
+      <i class="fas fa-trash"></i>
+    <% end %>
+    <hr>
+    <p><%= @article.content %></p>
+  </div>
+</div>
+
+<hr>
+<br>
+<%= link_to articles_path do %>
+  <i class="fa fa-history"></i> Back to list
+<% end %>
